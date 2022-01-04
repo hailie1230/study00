@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        body {padding: 0; margin: 0; }
+        .contWrap {
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .container {
+            box-sizing: border-box;
+            margin-top: 20px;
+            padding-bottom: 30px;
+            width:calc((100vw / 2) - 10px);
+        }
+        .container:first-child, .container:nth-child(2) {
+            margin-top: 0;
+        }
+        .cont1 {
+            background-color: beige;  
+        }
+        .cont2 {
+            background-color: antiquewhite;   
+        }
+        .container .flex {
+            display: flex;
+            flex-direction: row;
+            height: 80vh;
+        } 
+        .container .flex1 {
+            flex-wrap: nowrap;
+        } 
+        .container .flex2 {
+            flex-wrap: wrap;
+        } 
+        .container .flex3 {
+            flex-direction: column;
+        } 
+        .container .flex4 {
+            flex-direction: column-reverse;
+        } 
+        .tit {    
+            padding: 20px;
+            background-color: rgba(0,0,0,0.1);
+        }
+        .tit strong {
+            display: block;
+            font-size: 25px; 
+            text-align: center; 
+        }
+        .tit p {
+            width: 90%; margin-left: auto; margin-right: auto;
+            background-color: rgba(0,0,0,0.1);
+            padding: 10px;
+        }
+        .item {
+            width: 40px; height: 40px;
+            font-size: 16px;
+        }
+        .item1  {background-color: #ef9a9a;}
+        .item2  {background-color: #f48fb1;}
+        .item3  {background-color: #ce93d8;}
+        .item4  {background-color: #b39ddb;}
+        .item5  {background-color: #9fa8da;}
+        .item6  {background-color: #90caf9;}
+        .item7  {background-color: #81d4fa;}
+        .item8  {background-color: #80deea;}
+        .item9  {background-color: #80cbc4;}
+        .item10 {background-color: #a5d6a7;}
+    </style>
+</head>
+<body>
+    <div class="contWrap">
+        <div class="container cont1">
+            <div class="tit">
+                <strong>flex-direction: row;</strong>
+                <p>기본 값!, 왼쪽 정렬 </p>
+            </div>
+            <div class="flex flex1">
+                <div class="item item1">1</div>
+                <div class="item item2">2</div>
+                <div class="item item3">3</div>
+                <div class="item item4">4</div>
+                <div class="item item5">5</div>
+                <div class="item item6">6</div>
+                <div class="item item7">7</div>
+                <div class="item item8">8</div>
+                <div class="item item9">9</div>
+                <div class="item item10">10</div>
+            </div>
+        </div>
+        <!--//cont1-->
+        <div class="container cont2">
+            <div class="tit">
+                <strong>flex-direction: row-reverse;</strong>
+                <p>오른쪽 정렬! item 순서도 오른쪽 정렬!</p>
+            </div>
+            <div class="flex flex2">
+                <div class="item item1">1</div>
+                <div class="item item2">2</div>
+                <div class="item item3">3</div>
+                <div class="item item4">4</div>
+                <div class="item item5">5</div>
+                <div class="item item6">6</div>
+                <div class="item item7">7</div>
+                <div class="item item8">8</div>
+                <div class="item item9">9</div>
+                <div class="item item10">10</div>
+            </div>
+        </div>
+        <!--//cont2-->
+        <div class="container cont1">
+            <div class="tit">
+                <strong>flex-direction: column;</strong>
+                <p>기준 축이 수직 축</p>
+            </div>
+            <div class="flex flex3">
+                <div class="item item1">1</div>
+                <div class="item item2">2</div>
+                <div class="item item3">3</div>
+                <div class="item item4">4</div>
+                <div class="item item5">5</div>
+                <div class="item item6">6</div>
+                <div class="item item7">7</div>
+                <div class="item item8">8</div>
+                <div class="item item9">9</div>
+                <div class="item item10">10</div>
+            </div>
+        </div>
+        <!--//cont3-->
+        <div class="container cont2">
+            <div class="tit">
+                <strong>flex-direction: column-reverse;</strong>
+                <p>기준 축 : 수직 축, 아래에서 위로 </p>
+            </div>
+            <div class="flex flex4">
+                <div class="item item1">1</div>
+                <div class="item item2">2</div>
+                <div class="item item3">3</div>
+                <div class="item item4">4</div>
+                <div class="item item5">5</div>
+                <div class="item item6">6</div>
+                <div class="item item7">7</div>
+                <div class="item item8">8</div>
+                <div class="item item9">9</div>
+                <div class="item item10">10</div>
+            </div>
+        </div>
+        <!--//cont4-->
+    </div>
+</body>
+</html>

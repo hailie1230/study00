@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        body {padding: 0; margin: 0;}
+        .container {
+            background-color: antiquewhite;
+            padding: 40px 50px ;
+        }
+        .flex {
+            display: flex;
+        }
+        .item {
+            background-color: salmon;
+            display: inline-block;
+            width: 200px; height: 200px;
+            padding: 20px; margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>container</p>
+        <ul>
+            <li>display</li>
+            <li>flex-direction</li>
+            <li>flex-wrap</li>
+            <li>flex-flow</li>
+            <li>justify-content</li>
+            <li>align-item</li>
+            <li>align-content</li>
+        </ul>
+        <div class="flex">
+            <p class="item">item <br>
+                - order <br>
+                - flex-grow <br>
+                - flex-shrink <br>
+                - flex <br>
+                - align-self
+    
+            </p>
+            <p class="item">item</p>
+            <p class="item">item</p>
+        </div>
+    </div>
+</body>
+</html>
