@@ -1,0 +1,105 @@
+/* roboto (300,400,500)*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/* 티몬체 timon */
+@import url('https://webfontworld.github.io/tmon/Tmon.css');
+
+/* 넥슨고딕 nexon (300,400,700) */
+@import url('https://webfontworld.github.io/NexonLv1GothicLow/NexonLv1GothicLow.css');
+
+/* 지마켓 산스 gmarket (300,500,700)*/
+@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
+
+/* 에스코어 드림 score (100,200,300,400,500,600,700,800,900)*/
+@import url('https://webfontworld.github.io/score/SCoreDream.css');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ede7f6;
+}
+.shopping_list {
+  width: 500px;
+  background-color: #d1c4e9;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 50px auto;
+}
+h1 {
+  font-family: 'Tmon';
+  text-align: center;
+  color: #fff;
+  background-color: #a094b7;
+  margin: 0;
+  padding: 30px 0;
+}
+.list_wrap {
+  width: 90%;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+.list_item_making{
+  position: relative;
+}
+.list_item_making input{
+  border: 2px solid #b39ddb;
+  background-color: #ede7f6;
+  font-size: 23px;
+  width: 45%;
+}
+.list_item_making button {
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+  position: absolute; 
+  right: 0;
+  color: #673ab7;
+  cursor: pointer;
+}
+.list_item_box{
+  padding-top: 10px;
+  border-bottom: 2px solid #b39ddb;
+}
+.item_row {
+  font-size: 25px;
+  position: relative;
+}
+input.check_box {}
+span.list_name {
+  padding-left: 5px;
+}
+span.list_price {
+  text-align: right;
+  display: inline-block;
+  position: absolute;
+  right: 40px;
+}
+button.trash {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  padding-left: 5px;
+  position: absolute;
+  right: 0;
+}
+
+.list_item_result {
+  font-size: 20px;
+  padding-top: 10px; 
+  color: rgb(87, 87, 87);
+  position: relative;
+}
+.list_item_result div {
+  padding-top: 5px;
+}
+.item_checked {}
+.item_unchecked{}
+.item_total{
+  color: #000;
+  font-weight: bold;
+}
+.item_checked span, .item_unchecked span, .item_total span {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
