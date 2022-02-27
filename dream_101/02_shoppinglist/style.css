@@ -17,6 +17,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ede7f6;
+  box-sizing: border-box;
 }
 .shopping_list {
   width: 500px;
@@ -63,6 +64,11 @@ h1 {
 .item_row {
   font-size: 25px;
   position: relative;
+  padding: 2px 0;
+  border-top: 1px solid #d1c4e9;
+}
+.item_row.checked {
+  background-color: rgba(0,0,0,0.3);
 }
 input.check_box {}
 span.list_name {
