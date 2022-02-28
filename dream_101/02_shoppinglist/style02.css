@@ -1,0 +1,130 @@
+/* roboto (300,400,500)*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/* 티몬체 timon */
+@import url('https://webfontworld.github.io/tmon/Tmon.css');
+
+/* 넥슨고딕 nexon (300,400,700) */
+@import url('https://webfontworld.github.io/NexonLv1GothicLow/NexonLv1GothicLow.css');
+
+/* 지마켓 산스 gmarket (300,500,700)*/
+@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
+
+/* 에스코어 드림 score (100,200,300,400,500,600,700,800,900)*/
+@import url('https://webfontworld.github.io/score/SCoreDream.css');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ede7f6;
+  box-sizing: border-box;
+}
+.shopping_list {
+  max-width: 500px;
+  width: 90%;
+  background-color: #b39ddb;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 50px auto;
+}
+h1 {
+  font-family: 'Tmon';
+  text-align: center;
+  color: #fff;
+  background-color: #836fa9;
+  margin: 0;
+  padding: 30px 0;
+}
+.list_wrap {
+  width: 90%;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+.add_item_box{
+  position: relative;
+}
+.add_item_box input{
+  border: 2px solid #b39ddb;
+  background-color: #ede7f6;
+  font-size: 23px;
+  width: 45%;
+}
+.add_item_box button {
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+  position: absolute; 
+  right: 0;
+  color: #673ab7;
+  cursor: pointer;
+}
+.list_item_box{
+  padding-top: 10px;
+  border-bottom: 2px solid #836fa9;
+}
+.item_row {
+  font-size: 25px;
+  position: relative;
+  padding: 2px 0;
+  border-top: 1px solid #b39ddb;
+}
+.item_row.checked {
+  background-color: rgba(0,0,0,0.3);
+}
+input.check_box {}
+span.item_name {
+  padding: 0 10px 0 5px;
+  cursor: pointer;
+}
+span.item_price {
+  text-align: right;
+  display: inline-block;
+  position: absolute;
+  right: 40px;
+  cursor: pointer;
+}
+.trash_btn {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  padding-left: 5px;
+  position: absolute;
+  right: 0;
+}
+
+.list_item_result {
+  font-size: 20px;
+  padding-top: 10px; 
+  color: rgb(87, 87, 87);
+  position: relative;
+}
+.list_item_result div {
+  padding-top: 5px;
+}
+.item_checked {}
+.item_unchecked{}
+.item_total{
+  color: #000;
+  font-weight: bold;
+}
+.item_checked span, .item_unchecked span, .item_total span {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+@media screen and (max-width: 800px){
+  .add_item_box input {
+    font-size: 18px;
+    width: 43%;
+  }
+  .add_item_box button {
+    font-size: 20px;
+  }
+  .list_item_result {
+    font-size: 16px;
+  }
+  .item_total {
+    font-size: 18px;
+  }
+}

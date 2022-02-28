@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shopping list</title>
+  <link rel="stylesheet" href="style02.css">
+
+  <script src="https://kit.fontawesome.com/8049297440.js" crossorigin="anonymous"></script>
+  <script src="script03.js" defer></script>
+</head>
+<body>
+  <div class="shopping_list">
+    <h1>Shopping List</h1>
+    <div class="list_wrap">
+      <div class="add_item_box">
+        <input class="input_name" type="text" placeholder="list name">
+        <input class="input_price" type="number" placeholder="expected price">
+        <button class="item_add_btn">+</button>
+      </div>
+      <div class="list_item_box">
+        <!-- <div class="item_row">
+          <input type="checkbox" class="check_box">
+          <span class="item_name">우유</span>
+          <span class="item_price">100$</span>
+          <button class="trash"><i class="far fa-trash-alt"></i></button>
+        </div> -->
+        <!-- <div class="item_row active">
+          <input type="checkbox" class="check_box">
+          <span class="list_name">빵</span>
+          <span class="list_price">100$</span>
+          <button class="trash"><i class="far fa-trash-alt"></i></button>
+        </div> -->
+      </div>
+      <div class="list_item_result">
+        <div class="item_checked">
+          Checked: <span class="sum_checked_result">0 $</span>
+        </div>
+        <div class="item_unchecked">
+          Unchecked: <span class="sum_unchcked_result">0 $</span>
+        </div>
+        <div class="item_total">
+          toal: <span class="sum_total_result">0 $</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
